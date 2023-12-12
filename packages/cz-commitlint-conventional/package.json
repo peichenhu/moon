@@ -1,0 +1,31 @@
+{
+    "name": "@pch1024/cz-commitlint-conventional",
+    "version": "0.0.1",
+    "author": "pch1024",
+    "license": "MIT",
+    "main": "./dist/index",
+    "module": "./dist/index.mjs",
+    "exports": {
+        ".": {
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.cjs"
+        },
+        "./package.json": "./package.json"
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "node build.mjs"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "devDependencies": {
+        "@commitlint/config-conventional": "^18.4.3",
+        "esbuild": "^0.19.9"
+    },
+    "peerDependencies": {
+        "@commitlint/config-conventional": "^18.4.3"
+    }
+}
