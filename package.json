@@ -1,12 +1,41 @@
 {
-    "name": "mono",
-    "private": true,
-    "license": "MIT",
-    "version": "0.0.0",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "devDependencies": {
-        "@changesets/cli": "^2.27.1"
+  "name": "mono",
+  "private": true,
+  "license": "MIT",
+  "version": "0.0.0",
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.1",
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@commitlint/cz-commitlint": "^18.4.3",
+    "@pch1024/cz-commitlint-conventional": "workspace:*",
+    "@pch1024/prettier-config": "workspace:*",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "commitizen": "^4.3.0",
+    "conventional-changelog-cli": "^4.1.0",
+    "eslint": "^8.55.0",
+    "husky": "^8.0.3",
+    "inquirer": "^8.2.6",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.0"
+  },
+  "prettier": "@pch1024/prettier-config",
+  "lint-staged": {
+    "*.{js,vue,jsx,ts,tsx,cjs,mjs}": "eslint --fix",
+    "*.{js,vue,jsx,ts,tsx,cjs,mjs,css,less,sass,scss,html,md}": "prettier --write"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
     }
+  },
+  "commitlint": {
+    "extends": "@pch1024/cz-commitlint-conventional"
+  },
+  "scripts": {
+    "lint": "lint-staged",
+    "prepare": "husky install"
+  }
 }

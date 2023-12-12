@@ -7,87 +7,87 @@ export default {
 				enum: {
 					feat: {
 						description: '新增功能 | A new feature',
-						title: 'Features',
+						title: '✨Features',
 						emoji: '✨'
 					},
 					fix: {
 						description: '修复缺陷 | A bug fix',
-						title: 'Bug Fixes',
+						title: '🐛Bug Fixes',
 						emoji: '🐛'
 					},
 					docs: {
 						description: '文档更新 | Documentation only changes',
-						title: 'Documentation',
+						title: '📚Documentation',
 						emoji: '📚'
 					},
 					style: {
 						description: '代码格式 | Changes that do not affect the meaning of the code',
-						title: 'Styles',
+						title: '💎Styles',
 						emoji: '💎'
 					},
 					refactor: {
 						description: '代码重构 | A code change that neither fixes a bug nor adds a feature',
-						title: 'Code Refactoring',
+						title: '📦Code Refactoring',
 						emoji: '📦'
 					},
 					perf: {
 						description: '性能提升 | A code change that improves performance',
-						title: 'Performance Improvements',
+						title: '🚀Performance Improvements',
 						emoji: '🚀'
 					},
 					test: {
 						description: '测试相关 | Adding missing tests or correcting existing tests',
-						title: 'Tests',
+						title: '🚨Tests',
 						emoji: '🚨'
 					},
 					build: {
 						description: '构建相关 | Changes that affect the build system or external dependencies',
-						title: 'Builds',
+						title: '🛠Builds',
 						emoji: '🛠'
 					},
 					ci: {
 						description: '持续集成 | Changes to our CI configuration files and scripts',
-						title: 'Continuous Integrations',
+						title: '⚙️Continuous Integrations',
 						emoji: '⚙️'
 					},
 					chore: {
 						description: '其他修改 | Other changes that don‘t modify src or test files',
-						title: 'Chores',
+						title: '♻️Chores',
 						emoji: '♻️'
 					},
 					revert: {
 						description: '回退代码 | Reverts a previous commit',
-						title: 'Reverts',
+						title: '🗑Reverts',
 						emoji: '🗑'
 					}
 				}
 			},
 			scope: {
-				description: '选择更改范围 | What is the scope of this change'
+				description: '选择更改范围 (选填：具体项目名称)'
 			},
 			subject: {
-				description: '简短描述更改 | Write a short, imperative tense description of the change'
+				description: '填写更改主题 (必填)'
 			},
 			body: {
-				description: '详细说明更改 | Provide a longer description of the change'
+				description: '填写更改明细 (选填：换行 \\n)'
 			},
 			isBreaking: {
-				description: '非兼容性更改? | Are there any breaking changes?'
+				description: '非兼容性更改 (BREAKING CHANGE)'
 			},
 			breakingBody: {
-				description: '非兼容性内容 | A BREAKING CHANGE commit requires a body. '
+				description: '非兼容性主题 (BREAKING CHANGE)'
 			},
 			breaking: {
-				description: '非兼容性描述 | Describe the breaking changes'
+				description: '非兼容性明细 (BREAKING CHANGE)'
 			},
 			isIssueAffected: {
-				description: '影响 issues? | Does this change affect any open issues?'
+				description: '影响 ISSUES (OPEN ISSUES)'
 			},
 			issuesBody: {
-				description: '描述 issues 影响 | If issues are closed, the commit requires a body.'
+				description: '影响 ISSUES 主题'
 			},
 			issues: {
-				description: '添加 issue 标识 | Add issue references (e.g. "fix #123", "re #123".)'
+				description: '影响 ISSUES 标识 (例如: "fix #123")'
 			}
 		}
 	}
