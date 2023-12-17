@@ -1,0 +1,63 @@
+/*
+配色方案：
+- color-scheme 和 @media (prefers-color-scheme: light) 是两套独立的配色方案。
+- color-scheme 用来切换当前系统的配色方案（不能自定义样式）
+    - color-scheme: normal; 表示使用系统默认配色；
+    - color-scheme: light; 表示使用系统默认的日间配色；
+    - color-scheme: dark; 表示使用系统默认的夜间配色；
+    - color-scheme: light dark; 表示使用系统自动切换的日间配色/夜间配色；
+- @media (prefers-color-scheme: light) 用来自定义当前系统的配色方案（比 color-scheme 优先级高）
+    - 只配置 @media (prefers-color-scheme: light) 表示使用日间配色，可以配置自定义样式；
+    - 只配置 @media (prefers-color-scheme: dark) 表示使用夜间配色，可以配置自定义样式；
+    - 以上俩个都配置，表示使用自动切换的日间配色/夜间配色，可以配置自定义样式；
+*/
+
+@import url(./button.css);
+
+:root {
+	/* 定义变量 */
+	--main-color: #44bd87;
+	--main-color-light: #3fe087;
+	--main-color-dark: #048053;
+	--theme-color: #333333;
+	--theme-bg-color: #fefefe;
+	--el-menu-bg-color: #ffffff;
+	--el-menu-text-color: #303133;
+	--el-menu-active-color: #409eff;
+	--el-menu-hover-bg-color: rgba(0, 0, 0, 0.2);
+
+	/* 字体相关 */
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	border: none;
+	min-width: 320px;
+	min-height: 100vh;
+	color: var(--theme-color);
+	background-color: var(--theme-bg-color);
+}
+
+@media (prefers-color-scheme: light) {
+	/* 使用默认配色 */
+}
+
+@media (prefers-color-scheme: dark) {
+	/* 使用自定义配色 */
+	:root {
+		--theme-color: #ffffff;
+		--theme-bg-color: #333333;
+		--el-menu-bg-color: #303133;
+		--el-menu-text-color: #ffffff;
+		--el-menu-active-color: #409eff;
+		--el-menu-hover-bg-color: rgba(0, 0, 0, 0.2);
+	}
+}

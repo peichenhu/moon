@@ -1,0 +1,32 @@
+:global(.demo) {
+	font-size: 10px;
+}
+
+.test {
+	font-size: 11px;
+}
+
+.test2 {
+	font-size: 13px;
+}
+
+@keyframes bounce {
+	33% {
+		transform: translateY(-20px);
+	}
+	66% {
+		transform: translateY(0px);
+	}
+}
+
+:root {
+	--uuid-name: 'ssada';
+}
+
+.bounce {
+	animation: bounce 1s infinite ease-in-out;
+}
+
+.bounce2 {
+	animation: bounce 1s infinite ease-in-out;
+}

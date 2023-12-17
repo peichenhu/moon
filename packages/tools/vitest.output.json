@@ -1,0 +1,154 @@
+{
+  "numTotalTestSuites": 4,
+  "numPassedTestSuites": 4,
+  "numFailedTestSuites": 0,
+  "numPendingTestSuites": 0,
+  "numTotalTests": 11,
+  "numPassedTests": 11,
+  "numFailedTests": 0,
+  "numPendingTests": 0,
+  "numTodoTests": 0,
+  "startTime": 1702624411625,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+            "useToString"
+          ],
+          "fullName": " useToString 测试 useToString 处理对象",
+          "status": "passed",
+          "title": "测试 useToString 处理对象",
+          "duration": 2,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "useToString"
+          ],
+          "fullName": " useToString 测试 useToString 处理数组",
+          "status": "passed",
+          "title": "测试 useToString 处理数组",
+          "duration": 0,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "useToString"
+          ],
+          "fullName": " useToString 测试 useToString 处理含有 Symbol属性的 对象",
+          "status": "passed",
+          "title": "测试 useToString 处理含有 Symbol属性的 对象",
+          "duration": 1,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "useToString"
+          ],
+          "fullName": " useToString 测试 useToString 处理含有 Symbol属性值的 对象",
+          "status": "passed",
+          "title": "测试 useToString 处理含有 Symbol属性值的 对象",
+          "duration": 0,
+          "failureMessages": []
+        }
+      ],
+      "startTime": 1702624412106,
+      "endTime": 1702624412109,
+      "status": "passed",
+      "message": "",
+      "name": "/Users/pch/Documents/GitHub/mono/packages/hooks/useFunction/useToString/index.test.ts"
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "",
+            "useSnapshotRef"
+          ],
+          "fullName": " useSnapshotRef 导出变量 state 是一个 Ref 类型",
+          "status": "passed",
+          "title": "导出变量 state 是一个 Ref 类型",
+          "duration": 3,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "useSnapshotRef"
+          ],
+          "fullName": " useSnapshotRef state 变化会创建快照",
+          "status": "passed",
+          "title": "state 变化会创建快照",
+          "duration": 202,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "useSnapshotRef"
+          ],
+          "fullName": " useSnapshotRef include 属性会创建快照",
+          "status": "passed",
+          "title": "include 属性会创建快照",
+          "duration": 100,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "useSnapshotRef"
+          ],
+          "fullName": " useSnapshotRef exclude 属性不会创建快照",
+          "status": "passed",
+          "title": "exclude 属性不会创建快照",
+          "duration": 102,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "useSnapshotRef"
+          ],
+          "fullName": " useSnapshotRef undo 会对快照进行撤销",
+          "status": "passed",
+          "title": "undo 会对快照进行撤销",
+          "duration": 51,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "useSnapshotRef"
+          ],
+          "fullName": " useSnapshotRef redo 会对快照撤销进行重做",
+          "status": "passed",
+          "title": "redo 会对快照撤销进行重做",
+          "duration": 52,
+          "failureMessages": []
+        },
+        {
+          "ancestorTitles": [
+            "",
+            "useSnapshotRef"
+          ],
+          "fullName": " useSnapshotRef delay 会对快照的创建动作进行防抖",
+          "status": "passed",
+          "title": "delay 会对快照的创建动作进行防抖",
+          "duration": 201,
+          "failureMessages": []
+        }
+      ],
+      "startTime": 1702624412174,
+      "endTime": 1702624412885,
+      "status": "passed",
+      "message": "",
+      "name": "/Users/pch/Documents/GitHub/mono/packages/hooks/useHook/useSnapshotRef/index.test.ts"
+    }
+  ]
+}

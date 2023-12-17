@@ -1,0 +1,87 @@
+/* .vitepress/theme/custom.css */
+
+:root {
+	--main-color-light: #3fe087;
+	--main-color: #44bd87;
+	--main-color-dark: #048053;
+	--vp-home-hero-name-color: transparent;
+	--vp-home-hero-name-background: -webkit-linear-gradient(120deg, #ff00f8 30%, #2500fa);
+	--vp-home-hero-image-background-image: linear-gradient(-45deg, #ff00f8 50%, #2500fa 50%);
+	--vp-home-hero-image-filter: blur(88px);
+}
+
+@media (min-width: 640px) {
+	:root {
+		--vp-home-hero-image-filter: blur(42px);
+	}
+}
+
+@media (min-width: 960px) {
+	:root {
+		--vp-home-hero-image-filter: blur(66px);
+	}
+}
+
+/* 按钮样式 */
+
+button {
+	padding: 3px 15px;
+	background-color: var(--main-color);
+	border: none;
+	outline: none;
+	color: #fff;
+	text-shadow: 1px 1px 1px var(--main-color-dark);
+	margin: 0.5rem 0;
+	border-bottom: 2px solid var(--main-color-dark);
+	border-radius: 4px;
+	font-size: 1rem;
+	box-sizing: border-box;
+	vertical-align: middle;
+	cursor: pointer;
+	user-select: none;
+}
+
+button + button {
+	margin-left: 10px;
+}
+
+button:hover {
+	// background-color: var(--main-color);
+	border-top: 1px solid var(--main-color-light);
+	border-bottom: 1px solid var(--main-color-dark);
+}
+
+button:active {
+	border-bottom: 0;
+	border-top: 2px solid var(--main-color-light);
+	background-color: var(--main-color-light);
+}
+
+button[disabled] {
+	background: gray;
+	border-color: gray;
+	pointer-events: none;
+}
+
+// 控件样式
+
+input,
+select,
+textarea {
+	background: #fafafa;
+	border: 1px solid lightgray;
+	outline: none;
+	vertical-align: middle;
+}
+
+// 公共样式
+
+.demo {
+	background-color: var(--vp-code-block-bg);
+	padding: 15px;
+	.row {
+		padding: 5px;
+		border-bottom: 1px dashed #ccc;
+		overflow: auto;
+	}
+}

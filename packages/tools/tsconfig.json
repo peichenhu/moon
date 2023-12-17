@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"target": "ES2022",
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		"lib": ["ES2022", "DOM", "DOM.Iterable"],
+		"jsx": "preserve",
+		"jsxImportSource": "vue",
+		"noEmit": true,
+		"allowImportingTsExtensions": true
+	},
+	"exclude": ["node_modules", "dist", "docs", "cache"],
+	"include": ["**/*.tsx", "**/*.ts", "**/*.vue"]
+}
